@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/PGRM/static/css/main.07edc6ba.css",
+    "main.js": "/PGRM/static/js/main.49ef0106.js",
+    "static/js/787.cda612ba.chunk.js": "/PGRM/static/js/787.cda612ba.chunk.js",
+    "static/media/home.png": "/PGRM/static/media/home.d3e02abca6c1f50d7e6d.png",
+    "static/media/login.png": "/PGRM/static/media/login.8af762fbecdf5f75bdb1.png",
+    "static/media/signup.png": "/PGRM/static/media/signup.12b086322b94a01f5ac2.png",
+    "index.html": "/PGRM/index.html",
+    "main.07edc6ba.css.map": "/PGRM/static/css/main.07edc6ba.css.map",
+    "main.49ef0106.js.map": "/PGRM/static/js/main.49ef0106.js.map",
+    "787.cda612ba.chunk.js.map": "/PGRM/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07edc6ba.css",
+    "static/js/main.49ef0106.js"
+  ]
+}
