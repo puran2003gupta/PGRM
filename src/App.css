@@ -1,38 +1,317 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    text-align: center;
   }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .blank{
+    color: rgb(32, 8, 246);
+  }
+ 
+  
+  .signup-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#40F8FF; 
+    color: #40F8FF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; 
+    cursor: pointer;
+  }
+  .signup-content {
+    margin-left:15%;
+    width: 1000px;
+    height:500px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    padding-left: 80px;
+    padding-top: 60px;
+    /* Add 3D perspective */
+    perspective: 10px;
+    /* Add a shadow to the container */
+    box-shadow: 0 0 10px 3px #ccc;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .signup-button:hover {
+    background-color: #40F8FF;     
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 500px;
+  }
+
+  .form-submit {
+    width: 100px;
+    height: 40px;
+    background-color: #40F8FF;
+    color: black;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+  }
+  .form-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+    
+  
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  .sigup-image-link{
+    font-family: sans-serif;
+  }
+  
+  .code-img{
+    margin-right: 20px;
+  width: 350px;
+  height: 350px;
+    
+}
+.signup-image {
+  float: right;
+ }
+
+.signin-image {
+ float: right;
+}
+.loginimg{
+  margin-right: 20px;
+  width: 350px;
+  height: 350px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.signin-content {
+  margin-left:15%;
+  width: 1000px;
+  height:500px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  padding-left: 80px;
+  padding-top: 60px;
+  /* Add 3D perspective */
+  perspective: 10px;
+  /* Add a shadow to the container */
+  box-shadow: 0 0 10px 3px #ccc;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+
+
+
+
+
+.contact-page {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.contact-info,
+.contact-form {
+  width: 45%;
+}
+
+.contact-form form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Contact.css */
+
+
+
+.contact-page {
+  display: flex;
+  
 }
+
+.contact-info {
+  width: 40%;
+}
+
+.phone-content-info {
+ 
+  width: 400px;
+  height: 50px;
+  border: 1px solid #ccc;
+  /* Add 3D perspective */
+  perspective: 10px;
+  /* Add a shadow to the container */
+  box-shadow: 0 0 10px 3px #ccc;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start; /* Align text to the left */
+  text-align: center;
+  padding-left: 20px;
+  padding-top:8px;
+}
+
+.email-content-info {
+ 
+  width: 400px;
+  height: 50px;
+  border: 1px solid #ccc;
+  /* Add 3D perspective */
+  perspective: 10px;
+  /* Add a shadow to the container */
+  box-shadow: 0 0 10px 3px #ccc;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start; /* Align text to the left */
+  text-align: center;
+  padding-left: 20px;
+  padding-top:8px;
+}
+
+.address-content-info {
+ 
+  width: 400px;
+  height: 50px;
+  border: 1px solid #ccc;
+  /* Add 3D perspective */
+  perspective: 10px;
+  /* Add a shadow to the container */
+  box-shadow: 0 0 10px 3px #ccc;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start; /* Align text to the left */
+  text-align: center;
+  padding-left: 20px;
+  padding-top:8px;
+}
+.contact-form {
+  width: 50%;
+}
+
+
+.small-button {
+  font-size: 14px; /* Adjust the font size as needed */
+  padding: 5px 10px; /* Adjust padding to control button size */
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width:75px;
+}
+
+.small-button:hover {
+  background-color: #0056b3;
+}
+
+.vertical-line {
+  background-color:#272829;
+  width: 1px;
+  height:375px;
+  position: absolute;
+  left: 40%;
+  transform: translateX(-50%);
+
+}
+
+
+
+
+
+.homeimg{
+height: 650px;
+ width: 1520px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
