@@ -24,6 +24,9 @@ const Navbar = () => {
         <li className="nav-item">
           <NavLink className="nav-link active" aria-current="page" to="/contact">Contact</NavLink>
         </li>
+        <li className="nav-item">
+          <NavLink className="nav-link active" aria-current="page" to="/CDash">Citi_Dashboard</NavLink>
+        </li>
         {/* <li className="nav-item">
           <NavLink className="nav-link active" aria-current="page" to="/login">LogIn</NavLink>
         </li> */}
@@ -33,8 +36,7 @@ const Navbar = () => {
           </NavLink>
           <ul className="dropdown-menu">
             <li><NavLink className="dropdown-item" to="/login">Citizen</NavLink></li>
-            <li><NavLink className="dropdown-item" to="/login"> GRO</NavLink></li>
-            <li><NavLink className="dropdown-item" to="/login"> RO</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/login"> Employee</NavLink></li>
           </ul>
         </li>
         <li className="nav-item">

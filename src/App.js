@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
+import Citi_Dashboard from "./components/Citi_Dashboard";
 
 
 // import Dashboard from "./components/Dashboard";
@@ -19,6 +20,7 @@ class App extends Component {
   render() {
     return (
       <>
+      
       <Navbar/>
       
          <Routes>
@@ -27,6 +29,7 @@ class App extends Component {
           <Route exact path="/about" element={<About/>} />
           <Route exact path="/login" element={<Login/>} />
           <Route exact path="/signup" element={<SignUp/>} />
+          <Route exact path="/CDash" element={<Citi_Dashboard/>} />
           {/* <Route exact path="/dashboard" element={<Dashboard/>} />
           <Route exact path="/citizen" element={<Citizen/>} />
           <Route exact path="/gro" element={<GRO/>} />
