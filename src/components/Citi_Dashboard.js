@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import complain from "../images/complain.png"
 const Citi_DashBoard = () => {
     const [complaintType, setComplaintType] = useState(''); // Default value is an empty string
     const [selectedFile, setSelectedFile] = useState(null);
@@ -23,8 +23,13 @@ const Citi_DashBoard = () => {
         <section className="CDasboard">
             <div className="container mt-4">
                 <div className="CDashboard-content">
+                <div className='signin-image'>
+            <figure>
+              <img src={complain} alt="Sign up" className="code-img" />
+            </figure>
+          </div>
                     <div className="CDashboard-form">
-                        <h2 className="Cheading" style={{ marginTop: "1px" }}>Register Your Complaint</h2>
+                        <h2 className="Cheading" >Register Your Complaint</h2>
                         <form onSubmit={handleSubmit}>
                             <label htmlFor="complaintType">Type of Complaint:</label>
                             <select

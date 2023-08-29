@@ -5,12 +5,13 @@ import { signUp } from '../Services/user-service';
 
 const SignUp = () => {
   const [data, setData]=useState({
-    name:'',
-    email:'',
-    phone_no:'',
-    profession:'',
-    password:'',
-    Cpassword:''
+    user_id:'',
+    user_name:'',
+    user_email :'',
+    user_mobile:'',
+    user_profession:'',
+    user_pass:'',
+    user_Cpass:''
   })
   const [error, setError]= useState({
     errors:{},
@@ -66,8 +67,8 @@ const SignUp = () => {
                 <i class="zmdi zmdi-account material-icons-name"></i>
                 </label>
                 <input type="text"  name = "name" id ="name" autoComplete='off' placeholder=' Your Name' 
-                onChange={(e)=>handleChange(e,'name')} 
-                value ={data.name}
+                onChange={(e)=>handleChange(e,'user_name')} 
+                value ={data.user_name}
                 />
               </div>
 
@@ -76,8 +77,8 @@ const SignUp = () => {
                 <i class="zmdi zmdi-email material-icons-name"></i>
                 </label>
                 <input type="text"  name = "name" id ="Email" autoComplete='off' placeholder=' Your Email'
-                onChange={(e)=>handleChange(e,'email')}
-                value ={data.email}
+                onChange={(e)=>handleChange(e,'user_email')}
+                value ={data.user_email}
                 />
               </div>
 
@@ -86,8 +87,8 @@ const SignUp = () => {
                 <i class="zmdi zmdi-phone-in-talk material-icons-name"></i>
                 </label>
                 <input type="text"  name = "Phone No" id ="Phone No" autoComplete='off' placeholder=' Your Phone No'
-                onChange={(e)=>handleChange(e,'phone_no')}
-                value ={data.phone_no}
+                onChange={(e)=>handleChange(e,'user_mobile')}
+                value ={data.user_mobile}
                 />
               </div>
 
@@ -96,8 +97,8 @@ const SignUp = () => {
                 <i class="zmdi zmdi-slideshow material-icons-name"></i>
                 </label>
                 <input type="text"  name = "Work" id ="Work" autoComplete='off' placeholder=' Your Profession'
-                onChange={(e)=>handleChange(e,'profession')}
-                value ={data.profession}
+                onChange={(e)=>handleChange(e,'user_profession')}
+                value ={data.user_profession}
                 />
               </div>
 
@@ -106,8 +107,8 @@ const SignUp = () => {
                 <i class="zmdi zmdi-lock material-icons-name"></i>
                 </label>
                 <input type="text"  name = "Password" id ="Password" autoComplete='off' placeholder=' Your Password'
-                onChange={(e)=>handleChange(e,'password')}
-                value ={data.password}
+                onChange={(e)=>handleChange(e,'user_pass')}
+                value ={data.user_pass}
                 />
               </div>
 
@@ -116,8 +117,8 @@ const SignUp = () => {
                 <i class="zmdi zmdi-lock material-icons-name"></i>
                 </label>
                 <input type="text"  name = "CPassword" id ="CPassword" autoComplete='off' placeholder=' Confirm Your Password'
-                onChange={(e)=>handleChange(e,'Cpassword')}
-                value ={data.Cpassword}
+                onChange={(e)=>handleChange(e,'user_Cpass')}
+                value ={data.user_Cpass}
                 />
               </div>
 
